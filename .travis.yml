@@ -17,12 +17,10 @@ install:
   - npm install
 script:
   - hexo clean
-
 after_script:
   - git config user.name "wenju.tian"
   - git config user.email "21954906@163.com"
   - sed -i "s/{token}/${token}/g" ./_config.yml
-  # - sed -i "s/{TENCENT_TOKEN}/${TENCENT_TOKEN}/g" ./_config.yml
   - hexo d -g
 # 通知
 notifications:
