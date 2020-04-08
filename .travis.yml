@@ -1,0 +1,32 @@
+# 语言
+language: node_js
+# node版本
+node_js:
+  - 8
+# 指定缓存模块
+cache:
+  directories:
+    - node_modules
+before_install:
+- export TZ='Asia/Shanghai'  # 解决时区不统一的问题
+# 监听分支
+branches:
+  only:
+    - master
+install:
+  - npm install
+script:
+  - hexo clean
+  - hexo generate
+after_script:
+  - git config user.name "wenju.tian"
+  - git config user.email "21954906@163.com"
+  - sed -i "s/{token}/${token}/g" ./_config.yml
+  - sed -i "s/{TENCENT_TOKEN}/${TENCENT_TOKEN}/g" ./_config.yml
+  - hexo deploy
+# 通知
+notifications:
+  email:
+    - asjdr123@163.com
+  on_success: change
+  on_failure: always
