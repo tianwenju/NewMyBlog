@@ -8,7 +8,7 @@ cache:
   directories:
     - node_modules
 before_install:
-- export TZ='Asia/Shanghai'  # 解决时区不统一的问题
+  - export TZ='Asia/Shanghai'  # 解决时区不统一的问题
 # 监听分支
 branches:
   only:
@@ -17,7 +17,7 @@ install:
   - npm install
 script:
   - hexo clean
-  
+
 after_script:
   - git config user.name "wenju.tian"
   - git config user.email "21954906@163.com"
@@ -27,6 +27,7 @@ after_script:
 # 通知
 notifications:
   email:
-    - asjdr123@163.com
+    - wenju.tian@deltaww.com
+    - 21954906@qq.com
   on_success: change
   on_failure: always
