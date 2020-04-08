@@ -9,7 +9,6 @@ cache:
     - node_modules
 before_install:
   - export TZ='Asia/Shanghai'  # 解决时区不统一的问题
-  - npm install -g hexo-cli
   - git config user.name "wenju.tian"
   - git config user.email "21954906@163.com"
 # 监听分支
@@ -17,12 +16,11 @@ branches:
   only:
     - master
 install:
+  - npm install -g hexo-cli
   - npm install
 script:
-  - hexo clean
-  - hexo generate
-  - sed -i "s/{token}/${token}/g" ./_config.yml
-  - hexo d
+  - sed -i "s/{GITHUB_TOKEN}/${GITHUB_TOKEN}/g" ./_config.yml
+  - npm run deploy
 # 通知
 notifications:
   email:

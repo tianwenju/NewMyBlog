@@ -145,7 +145,7 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repository: https://{token}@github.com/tianwenju/tianwenju.github.io.git
+    repository: https://{GITHUB_TOKEN}@github.com/tianwenju/tianwenju.github.io.git
     branch: master
   # - type: git
   #   repository: https://{TENCENT_USERNAME}:{TENCENT_TOKEN}@giturl
