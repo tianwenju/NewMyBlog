@@ -13,13 +13,13 @@ top: 1
 * 需要免费内网穿透服务
 * 管理内网服务器，内网web进行演示
 * 快速开发微信程序和第三方支付平台调试
-## 小毛球简介
+## 小米球简介
 >ngrok 服务可以分配给你一个域名让你本地的web项目提供给外网访问，特别适合向别人展示你本机的web demo 以及调试一些远程的API (比如微信公众号，企业号的开发) ngrok的官方服务可以在 这里查看 由于一些原因 有些同学可能打不开官方网站，国内访问不了，万幸的是ngrok 1.7版本的代码是开源的。 小米球就是基于ngrok的服务（小米球ngrok），来造福开发者。
 * 为什么不直接使用[ngrok](https://dashboard.ngrok.com/get-started)？
   所用的服务器为美国服务器，会比较卡顿。
   
 ## 准备
-1. 注册一个[小毛球账号](https://manager.xiaomiqiu.com/)，获取免费的Token
+1. 注册一个[小米球账号](https://manager.xiaomiqiu.com/)，获取免费的Token
 ![token](token.jpg)
 2. 在后台首页下载对应版本客户端
 ![download](download.jpg)
