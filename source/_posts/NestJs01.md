@@ -4,10 +4,10 @@ tags: [web-server]
 categories: [NestJs]
 date: 2020-04-09 10:30:15
 top: 1
-photos: [http://cdn.ipenywis.com/upload/images/6096784fdf5674791ef53fbcbe892746.png]
+photos: [https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1020128022,1175558782&fm=26&gp=0.jpg]
 ---
 # NestJS-01
-![Nest](http://cdn.ipenywis.com/upload/images/6096784fdf5674791ef53fbcbe892746.png)
+![Nest](https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1020128022,1175558782&fm=26&gp=0.jpg)
 ## NestJS 介绍
 * Nest 是一个渐进的 Node.js 框架，可以在 TypeScript 和 JavaScript (ES6、ES7、ES8)之上构 建高效、可伸缩的企业级服务器端应用程序。
 * Nest 基于 TypeScript 编写并且结合了 OOP（面向对象编程），FP（函数式编程）和 FRP （函数式响应编程）的相关理念。在设计上的很多灵感来自于 Angular，Angular 的很多模 式又来自于 Java 中的 Spring 框架，依赖注入、面向切面编程等，所以我们也可以认为： Nest 是 Node.js 版的 Spring 框架。
